@@ -1,0 +1,188 @@
+/* style.css */
+
+/* Basic Styling */
+body {
+    font-family: 'Roboto', sans-serif; /* Or any font you prefer */
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+/* Header Styles */
+header {
+    background-color: #000;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    max-width: 150px;
+    max-height: 60px;
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    overflow: hidden;
+}
+
+.logo img {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end; /* Align to the right */
+}
+
+nav li {
+    margin-left: 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #333;
+}
+
+/* Hero Section Styles */
+.hero {
+    background-image: url("black_back.jpg"); /* Replace with your hero image */
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    padding: 100px 0;
+    text-align: center;
+    height: auto;
+}
+
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+    color: whitesmoke;
+    text-shadow: #000 2px 2px 5px;
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.button {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #d4af37; /* Gold button */
+    color: #000; /* Black text on gold */
+    text-decoration: none;
+    border: 2px solid #d4af37; /* Gold border */
+    border-radius: 5px;
+    font-size: 1.1em;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: transparent; /* Transparent on hover */
+    color: #d4af37;  /* Gold text on hover */
+}
+
+/* Featured Items Styles */
+.featured-items {
+    padding: 40px;
+    text-align: center;
+    background-color: #fff;
+    display: flex;
+    flex-wrap: wrap; /* This is crucial for wrapping */
+    justify-content: center;
+    gap: 20px; /* Adds space between items */
+}
+
+.item {
+    flex: 1 0 250px; /* Adjust 250px as needed for minimum width */
+    background-color: #f8f8f8;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+.item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    display: block; /* Prevents small vertical alignment issues */
+}
+
+.item h3 {
+    color: #000;
+    font-size: 1.2em;
+    margin-bottom: 5px;
+}
+
+/* About Us Styles */
+.about-us {
+    padding: 40px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.about-us h2 {
+    color: #000;
+    font-size: 2em;
+    margin-bottom: 30px;
+}
+
+.about-us p {
+    font-size: 1.1em;
+    margin-bottom: 30px;
+}
+
+.about-us img {
+    max-width: 50%;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #000;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .item {
+        flex: 1 0 200px; /* Adjust minimum width for tablets */
+    }
+}
+
+@media (max-width: 500px) {
+    .item {
+        flex: 1 0 90%; /* Adjust minimum width for phones */
+    }
+}
